@@ -17,7 +17,7 @@ EXPOSE 110/tcp 143/tcp 993/tcp 995/tcp
 WORKDIR /etc/perdition
 
 COPY main.sh /
-
+RUN chmod +x /main.sh
 
 ENTRYPOINT ["/main.sh"]
 CMD ["DEFAULT"]
