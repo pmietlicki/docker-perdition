@@ -11,9 +11,6 @@ RUN apt-get update && \
 #copy default configuration
 COPY perdition/default-perdition /etc/default/perdition
 
-#create new dhparam with new image
-RUN openssl dhparam -out /etc/perdition/dhparam.pem 2048
-
 #Expose ports for services
 EXPOSE 110/tcp 143/tcp 993/tcp 995/tcp
 
