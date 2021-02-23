@@ -43,10 +43,10 @@ IMAP4_FLAGS="-l 143 -d"
 # Run an instance of perdition in IMAP4S mode
 # Set to "yes" to run this instance of perdition
 # Set to any other value to not run this instance of perdition
-IMAP4S=no
+IMAP4S=yes
 
 #Command line parameters to pass to perdition when run in IMAP4S mode
-IMAP4S_FLAGS=
+IMAP4S_FLAGS="-l 993 -d"
 
 # Run an instance of perdition in managesieve mode
 # Set to "yes" to run this instance of perdition
