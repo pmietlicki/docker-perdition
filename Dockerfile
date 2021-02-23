@@ -10,6 +10,7 @@ RUN apt-get update && \
 
 #copy default configuration
 COPY perdition/default-perdition /etc/default/perdition
+COPY perdition/* /etc/perdition/
 
 #create new dhparam with new image
 RUN openssl dhparam -out /etc/perdition/dhparam.pem 2048
