@@ -22,7 +22,7 @@ RUN_PERDITION=yes
 POP3=yes
 
 #Command line parameters to pass to perdition when run in POP3 mode
-POP3_FLAGS="-p 110"
+POP3_FLAGS="-l 110"
 
 # Run an instance of perdition in POP3S mode
 # Set to "yes" to run this instance of perdition
@@ -38,7 +38,7 @@ POP3S_FLAGS=
 IMAP4=yes
 
 #Command line parameters to pass to perdition when run in IMAP4 mode
-IMAP4_FLAGS="-p 143"
+IMAP4_FLAGS="-l 143"
 
 # Run an instance of perdition in IMAP4S mode
 # Set to "yes" to run this instance of perdition
