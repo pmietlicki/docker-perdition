@@ -22,7 +22,7 @@ RUN_PERDITION=yes
 POP3=yes
 
 #Command line parameters to pass to perdition when run in POP3 mode
-POP3_FLAGS="-l 110 --ssl_mode tls_listen -d"
+POP3_FLAGS="-l 110 -d"
 
 # Run an instance of perdition in POP3S mode
 # Set to "yes" to run this instance of perdition
@@ -38,7 +38,7 @@ POP3S_FLAGS="-l 995 --ssl_mode ssl_listen,ssl_outgoing -d"
 IMAP4=yes
 
 #Command line parameters to pass to perdition when run in IMAP4 mode
-IMAP4_FLAGS="-l 143 --ssl_mode tls_listen -d"
+IMAP4_FLAGS="-l 143 -d"
 
 # Run an instance of perdition in IMAP4S mode
 # Set to "yes" to run this instance of perdition
